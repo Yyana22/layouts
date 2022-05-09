@@ -1,0 +1,113 @@
+.product
+    background: #F7F7F7
+    display: flex
+    justify-content: space-between
+    position: relative
+    height: 777px
+    &__item
+        background: rgba(42, 42, 42, 0.15)
+        margin-top: 360px
+        width: 47px
+        height: 47px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            color: $colorSelect
+        &__left
+        &__right
+            transform: rotate(180deg)
+
+.collection-info
+    position: absolute
+    margin-top: -50px
+    margin-left: 260px
+    border: 1px solid #EAEAEA
+    width: 30%
+    height: 601px
+    align-items: center
+    display: flex
+    flex-direction: column
+    padding-top: 64px
+    background-color: $textOnDarkFon
+    &__title-one
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        margin-bottom: 12px
+    &__border-one
+        width: 63px
+        border-bottom: 3px solid $colorSelect
+        margin-bottom: 12px
+    &__title-two
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+    &__p
+        height: 52px
+        margin-top: 48px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+    &__price
+        margin-top: 32px
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #EF5B70
+        margin-bottom: 65px
+    &__border-two
+        width: 641px
+        border-bottom: 1px solid #EAEAEA
+        margin-bottom: 65px
+    &__button
+        margin-top: 48px
+        align-items: center
+        display: flex
+        width: 211px
+        height: 48px
+        border: 1px solid $colorP
+        &__img
+            color: #222222
+            margin-left: 23px
+            &__p
+                text-decoration: none
+                font-size: 16px
+                line-height: 19px
+                color: $colorP
+                padding-left: 23px
+                &:hover
+                    box-shadow: 0 0 5px $textOnDarkFon
+.sorts
+    display: flex
+    position: relative
+    &__summary
+        display: flex
+    &__arrow
+        margin-left: 10px
+    &__details
+        position: relative
+        &:not(:last-child)
+            margin-right: 28px
+    &__info
+        position: absolute
+        left: -9px
+        top: calc( 100% + 5px )
+        padding: 8px 30px 8px 8px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        display: flex
+        flex-direction: column
+        z-index: 1
+    &__label
+        display: flex
+        align-items: center
+
+.product-first_items
+    padding-top: 730px
+    display: flex
+    margin-bottom: 128px

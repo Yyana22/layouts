@@ -1,0 +1,138 @@
+.start_page
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.title_start_page
+    font-size: 24px
+    line-height: 29px
+    color: $colorSelect
+
+.breadcrumb
+    display: flex
+    &__link
+        text-decoration: none
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $colorSelect
+        &:last-child
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $colorSelect
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+
+.span_parag_head
+    color: $colorSelect
+    font-weight: 550
+
+summary
+    display: block
+    outline: none
+    &::-webkit-details-marker
+        display: none
+
+.sort-box
+    padding-top: 51px
+    padding-bottom: 64px
+    display: flex
+    position: relative
+    &__filter
+        width: $width-item
+
+.filter
+    padding: 13px 16px 16px
+    z-index: 1
+    position: absolute
+    &__name
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: $blackColor
+    &__img
+        margin-left: 12px
+    &__category
+        padding-top: 24px
+        padding-left: 12px
+        font-size: 14px
+        color: $colorSelect
+        height: 37px
+        line-height: 37px
+        border-left: 5px solid $colorSelect
+
+    &__ul
+        list-style-type: none
+        padding-top: 36px
+        padding-left: 11px
+    &__link
+        padding-bottom: 11px
+        text-decoration: none
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSelect
+    &__three_forms
+        margin-right: 48px
+    &__arrow_img
+        margin-left: 10px
+        &__text_if_form
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+
+    &[open]
+        width: 360px
+        box-sizing: border-box
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.sort
+    z-index: 1
+    display: flex
+    justify-items: center
+    position: absolute
+    margin-left: 390px
+    &__summary
+        display: flex
+    &__arrow
+        margin-left: 10px
+    &__details
+        position: relative
+        &:not(:last-child)
+            margin-right: 28px
+    &__info
+        position: absolute
+        left: -9px
+        top: calc( 100% + 5px )
+        padding: 8px 30px 8px 8px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        display: flex
+        flex-direction: column
+        z-index: 1
+    &__label
+        display: flex
+        align-items: center
+
+.pagination
+    width: 284px
+    height: 44px
+    border: 1px solid #EBEBEB
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-bottom: 97px
+    margin-top: 49px
+    &__link
+        color: #EBEBEB
+        text-decoration: none
+        &:hover
+            color: #EF5B70
