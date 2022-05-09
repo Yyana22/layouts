@@ -1,0 +1,131 @@
+*
+    margin: 0 auto
+    padding: auto
+    font-family: 'Montserrat'
+
+.header-c
+    background-image: none
+    background-color: #282828
+    height: 150px
+    font-family: 'Montserrat', sans-serif
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.main-menu-c
+    margin-bottom: 50px
+    margin-top: 0
+    width: 1110px
+    margin-top: -585px
+    display: flex
+    justify-content: center
+
+.catalogs
+    background: #E6E3C4
+    height: 1200px
+    border: 30px solid #282828
+    padding-top: 50px
+    &__table
+        width: 1110px
+        margin: 0 auto
+        border-collapse: collapse
+        &__title
+            text-align: center
+            margin-bottom: 50px
+        &__hat1
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 150%
+            color: #000000
+            border-right: 3px solid #282828
+        &__description
+            text-align: center
+            width: 400px
+            border-right: 3px solid #282828
+        &__name
+            text-align: center
+            font-weight: bolder
+            border-right: 3px solid #282828
+        &__img
+            padding-top: 20px
+            display: flex
+            align-items: center
+
+tr:not(:last-child)
+    border-bottom: 3px solid #282828
+
+a
+    text-decoration: none
+    color: #FFFFFF
+
+    .overlay
+        position: fixed
+        z-index: 5
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,0.6)
+        display: none
+
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    overflow-y: auto
+    overflow-x: hidden
+    transition: all 0.5s ease 0s
+    &:target
+        opacity: 1
+        visibility: visible
+    &:target .popup__content
+        // transform: translate(0px,0px)
+        transform: perspective(600px) translate(0px, 0px) rotateX(0deg)
+        opacity: 1
+    &__area
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px 10px
+    &__content
+        background-color: #998431
+        color: #fff
+        min-width: 800px
+        padding: 30px
+        position: relative
+        transition: all 0.5s ease 0s
+        opacity: 0
+        // transform: translate(0px,-100%)
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg)
+    &__close
+        position: absolute
+        margin-left: 780px
+        font-size: 20px
+    &__title
+        text-align: center
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 40px
+    &__text
+        text-align: center
+    &__li
+        text-align: start
+        list-style-type: none
+        margin-bottom: 10px
+        font-size: 18px
+        font-style: italic
+        &:before
+            content: "— "
